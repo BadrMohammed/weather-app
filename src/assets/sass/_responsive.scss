@@ -1,0 +1,22 @@
+@media #{$xs} {
+}
+@media #{$mwsm} {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+}
+@media #{$sm} {
+}
+@media #{$md} {
+}
+@media #{$mwmd} {
+}
+@media #{$mwlg} {
+}
+@media #{$lg} {
+}
+
+@media #{$xl} {
+}

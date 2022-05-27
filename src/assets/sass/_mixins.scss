@@ -1,0 +1,45 @@
+/*
+** Prefixes Mixin
+** Auto Add Prefixes To Properties
+*/
+@mixin prefixer($property, $value, $prefixes: ()) {
+	@each $prifex in $prefixes {
+		#{'-' + $prifex + '-' + $property }: $value;
+	}
+}
+/*
+** Animation Mixin
+** Auto Add Prefixes To Animations
+*/
+@mixin keyFrame($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+}
+
+@mixin sms-layout() {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	@content;
+}
+
+@mixin circle($w: 20px, $h:20px, $font: 1rem) {
+	display: inline-block;
+	width: $w;
+	height: $h;
+	margin: 5px;
+	line-height: $h;
+	font-size: $font;
+	color: #ffffff;
+	background: #000000;
+	border-radius: 50%;
+	text-align: center;
+	@content
+}

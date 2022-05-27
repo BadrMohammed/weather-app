@@ -1,0 +1,8 @@
+.MuiLoadingButton-root.button {
+  &--capitalize {
+    text-transform: capitalize;
+  }
+  // min-width: 100px;
+  // width: 120px;
+  width: 100%;
+}

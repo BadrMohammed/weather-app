@@ -1,0 +1,15 @@
+@import './mixins';
+
+// any global styles to be placed here.
+
+.page-header {
+	padding-top: $space-8;
+	padding-bottom: $space-8;
+  margin: 0;
+  margin-bottom: $space-8;
+  text-align: center;
+}
+
+.grid {
+  margin-bottom: $space-8 + 2;
+}

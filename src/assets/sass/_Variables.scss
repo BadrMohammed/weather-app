@@ -1,0 +1,54 @@
+// Colors
+$mainColor: rgba(0, 115, 37, 1);
+$colorTwo: rgba(0, 115, 37, 0.3);
+$textColor: #000;
+$textColorGrey: #444;
+$bgColor: #f8f8f8;
+$danger: #f86060;
+$warm-grey: #8a8a8a;
+$dark: #222;
+$lightDark: #555;
+$lightGreen: #d4edda;
+$white: #fff;
+$lightGray: #eee;
+// Fonts
+$mainFont: 'Lato', sans-serif;
+
+//aside
+
+$sidebar-bg-color: #3d3f3c;
+$submenu-bg-color: rgba(255, 255, 255, 0.05);
+$submenu-bg-color-collapsed: rgba(29, 29, 29, 0.95);
+$sidebar-color: #fff;
+$highlight-color: #fff;
+$icon-bg-color: rgba(255, 255, 255, 0.05);
+$icon-size: 35px;
+
+/////////// Media Query /////////
+// Extra small devices (portrait phones, less than 576px)
+$xs: '(max-width: 575.98px)';
+// Small devices (landscape phones)
+$mwsm: '(max-width: 767.98px)';
+// Small devices (landscape phones, 576px and up)
+$sm: '(min-width: 576px) and (max-width: 767.98px)';
+// Medium devices (tablets, 768px and up)
+$md: '(min-width: 768px) and (max-width: 991.98px)';
+$mwmd: '(max-width: 991.98px)';
+$mwlg: '(min-width: 991.99px)';
+// Large devices (desktops, 992px and up)
+$lg: '(min-width: 992px) and (max-width: 1199.98px)';
+// Extra large devices (large desktops, 1200px and up)
+$xl: '(min-width: 1200px)';
+
+// Spacing
+$space-8: 8px;
+
+// directions
+$right: right;
+$left: left;
+
+$colors: (
+  success: $lightGreen,
+  light: $white,
+  dimmed: lighten($warm-grey, 35%),
+);
