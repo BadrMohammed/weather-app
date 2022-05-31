@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/weather-app/static/css/main.215d08c5.css",
+    "main.js": "/weather-app/static/js/main.d39bdd27.js",
+    "static/css/973.20139435.chunk.css": "/weather-app/static/css/973.20139435.chunk.css",
+    "static/js/973.adfb4976.chunk.js": "/weather-app/static/js/973.adfb4976.chunk.js",
+    "static/css/639.b4e3d5a8.chunk.css": "/weather-app/static/css/639.b4e3d5a8.chunk.css",
+    "static/js/639.6b59b28c.chunk.js": "/weather-app/static/js/639.6b59b28c.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/weather-app/static/js/787.28cb0dcd.chunk.js",
+    "static/js/866.fc3a51cf.chunk.js": "/weather-app/static/js/866.fc3a51cf.chunk.js",
+    "static/js/975.a98d01e8.chunk.js": "/weather-app/static/js/975.a98d01e8.chunk.js",
+    "static/media/Cairo-Bold.ttf": "/weather-app/static/media/Cairo-Bold.42ec956bf204f4c2b199.ttf",
+    "static/media/Cairo-Regular.ttf": "/weather-app/static/media/Cairo-Regular.64b7f6f903681ee8f2ef.ttf",
+    "index.html": "/weather-app/index.html",
+    "main.215d08c5.css.map": "/weather-app/static/css/main.215d08c5.css.map",
+    "main.d39bdd27.js.map": "/weather-app/static/js/main.d39bdd27.js.map",
+    "973.20139435.chunk.css.map": "/weather-app/static/css/973.20139435.chunk.css.map",
+    "973.adfb4976.chunk.js.map": "/weather-app/static/js/973.adfb4976.chunk.js.map",
+    "639.b4e3d5a8.chunk.css.map": "/weather-app/static/css/639.b4e3d5a8.chunk.css.map",
+    "639.6b59b28c.chunk.js.map": "/weather-app/static/js/639.6b59b28c.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/weather-app/static/js/787.28cb0dcd.chunk.js.map",
+    "866.fc3a51cf.chunk.js.map": "/weather-app/static/js/866.fc3a51cf.chunk.js.map",
+    "975.a98d01e8.chunk.js.map": "/weather-app/static/js/975.a98d01e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.215d08c5.css",
+    "static/js/main.d39bdd27.js"
+  ]
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/973.20139435.chunk.css","mappings":"AAAA,gCACI,uCACA","sources":["components/Sidebar/Sidebar.scss"],"sourcesContent":[".pro-sidebar > .pro-sidebar-inner{\r\n    border-end-start-radius: 10px !important;\r\n    border-start-end-radius: 10px !important;\r\n}"],"names":[],"sourceRoot":""}
