@@ -15,7 +15,6 @@ function AuthenticatedLayoutController() {
   const [toggled, setToggled] = useState<boolean>(false);
 
   const handleToggleSidebar = () => {
-    debugger
     setToggled(!toggled);
   };
   const loading = () => (
