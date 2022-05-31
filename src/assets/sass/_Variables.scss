@@ -1,23 +1,28 @@
 // Colors
-$mainColor: rgba(0, 115, 37, 1);
-$colorTwo: rgba(0, 115, 37, 0.3);
+$mainColor: rgb(0, 127, 255);
+$colorTwo: rgb(0, 89, 178);
+$lightcolor: rgba(0, 127, 255,0.1);
 $textColor: #000;
 $textColorGrey: #444;
-$bgColor: #f8f8f8;
-$danger: #f86060;
+$bgColor: #fff;
+$danger: red;
+
+
+
+
 $warm-grey: #8a8a8a;
 $dark: #222;
 $lightDark: #555;
 $lightGreen: #d4edda;
 $white: #fff;
-$lightGray: #eee;
+$lightGray: rgba(138, 138, 138,0.3);
 // Fonts
 $mainFont: 'Lato', sans-serif;
 
 //aside
 
-$sidebar-bg-color: #3d3f3c;
-$submenu-bg-color: rgba(255, 255, 255, 0.05);
+$sidebar-bg-color: #fff;
+$submenu-bg-color: #fff;
 $submenu-bg-color-collapsed: rgba(29, 29, 29, 0.95);
 $sidebar-color: #fff;
 $highlight-color: #fff;
@@ -52,3 +57,4 @@ $colors: (
   light: $white,
   dimmed: lighten($warm-grey, 35%),
 );
+

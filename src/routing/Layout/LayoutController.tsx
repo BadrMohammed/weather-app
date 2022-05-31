@@ -11,15 +11,11 @@ const HeaderController = React.lazy(
   () => import('../../components/Header/HeaderController')
 );
 
-function AuthenticatedLayoutController({ history }: any) {
-  const [collapsed, setCollapsed] = useState<boolean>(false);
+function AuthenticatedLayoutController() {
   const [toggled, setToggled] = useState<boolean>(false);
 
-  const handleCollapsedChange = () => {
-    setCollapsed(!collapsed);
-  };
-
   const handleToggleSidebar = () => {
+    debugger
     setToggled(!toggled);
   };
   const loading = () => (
@@ -29,15 +25,11 @@ function AuthenticatedLayoutController({ history }: any) {
   return (
     <>
       <Suspense fallback={loading()}>
-        <HeaderController
-          handleToggleSidebar={handleToggleSidebar}
-          handleCollapsedChange={handleCollapsedChange}
-        />
+        <HeaderController handleToggleSidebar={handleToggleSidebar} />
       </Suspense>
       <div className={`app ${toggled ? 'toggled' : ''}`}>
         <Suspense fallback={loading()}>
           <SidebarController
-            collapsed={collapsed}
             toggled={toggled}
             handleToggleSidebar={handleToggleSidebar}
           />

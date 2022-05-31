@@ -5,7 +5,7 @@ axios.interceptors.request.use(
   (config: any) => {
     const configOptions = config;
     configOptions.baseURL = `${env.END_POINT}/`;
-
+    configOptions["content-type"]= "application/json"
     return config;
   },
   (error) => Promise.reject(error),
