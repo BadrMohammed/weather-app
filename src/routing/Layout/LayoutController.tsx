@@ -2,6 +2,7 @@ import React, { Suspense, useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import AuthenticatedLayoutView from './LayoutView';
 import routes from '../routes';
+import { HomeController } from '../../modules/Home/HomeController';
 
 const SidebarController = React.lazy(
   () => import('../../components/Sidebar/SidebarController')
@@ -28,15 +29,19 @@ function AuthenticatedLayoutController() {
       </Suspense>
       <div className={`app ${toggled ? 'toggled' : ''}`}>
         <Suspense fallback={loading()}>
-          <SidebarController
+          {/* <SidebarController
             toggled={toggled}
             handleToggleSidebar={handleToggleSidebar}
-          />
+          /> */}
         </Suspense>
-        <AuthenticatedLayoutView routes={routes} />
+        <HomeController/>
+        {/* <AuthenticatedLayoutView routes={routes} /> */}
       </div>
     </>
   );
 }
 
-export default withRouter(AuthenticatedLayoutController);
+// export default withRouter(AuthenticatedLayoutController);
+
+
+export default AuthenticatedLayoutController

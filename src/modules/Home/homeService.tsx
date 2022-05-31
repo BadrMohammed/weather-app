@@ -67,7 +67,7 @@ export const fetchStateImage = (
   countryIso: any,
   index: any
 ) => {
-  let query = `?action=query&titles=Image:${state}.jpg&prop=imageinfo&iiprop=url&format=json`;
+  let query = `?action=query&titles=Image:${state}.jpg&prop=imageinfo&iiprop=url&format=json&origin=*`;
   httpService
     .get(`https://en.wikipedia.org/w/api.php${query}`)
     .then((res: any) => {

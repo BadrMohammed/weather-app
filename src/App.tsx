@@ -1,13 +1,12 @@
 import './assets/sass/mainStyle.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-loading-skeleton/dist/skeleton.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
-// import LayoutController from './routing/Layout/LayoutController';
+import LayoutController from './routing/Layout/LayoutController';
 import { store } from './redux/store';
 import { changeLanguage, getLanguage } from './lang/local';
 import { SkeletonTheme } from 'react-loading-skeleton';
-import { HomeController } from './modules/Home/HomeController';
 
 function App() {
   return (
@@ -18,12 +17,12 @@ function App() {
       baseColor='#fff'
     >
       <Provider store={store}>
+        <LayoutController />
         {/* <BrowserRouter>
           <Switch>
             <Route render={(rest) => <LayoutController {...rest} />} />
           </Switch>
         </BrowserRouter> */}
-        <HomeController />
       </Provider>
     </SkeletonTheme>
   );
