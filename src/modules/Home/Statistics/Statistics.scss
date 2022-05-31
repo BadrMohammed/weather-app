@@ -1,0 +1,24 @@
+.statistics-section {
+  padding: 30px 0px;
+  width: 100%;
+
+  & .chart-card {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+    & .hourly-card {
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      padding: 10px;
+      border-radius: 10px;
+      min-width: 66px;
+      min-height: 70px;
+      text-align: center;
+    }
+  }
+}

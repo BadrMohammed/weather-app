@@ -1,0 +1,54 @@
+.table-list-section {
+  padding: 30px 0px;
+
+  & .state-statistics-card {
+    width: 100%;
+    border-radius: 10px;
+    min-height: 198px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+    & .text-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & .vr {
+        height: 100%;
+        // margin-block: 10px;
+      }
+    }
+
+    & .icon-wrapper {
+      & .icon {
+        margin-inline: 10px;
+        color: rgb(0, 127, 255);
+      }
+    }
+  }
+
+  & .year-statistics-card {
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    width: 100%;
+    min-height: 100px;
+    background: linear-gradient(
+      to right bottom,
+      rgb(0, 127, 255),
+      rgb(0, 89, 178) 120%
+    );
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px, rgb(0 0 0 / 4%) 0px 10px 10px;
+    padding: 0px 70px;
+
+    & .content-container-1,
+    .content-container-2 {
+      justify-content: space-between;
+      // width: 100%;
+      margin-top: 10px;
+      text-align: start;
+    }
+  }
+}

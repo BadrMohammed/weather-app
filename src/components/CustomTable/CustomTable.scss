@@ -1,0 +1,21 @@
+.table-card {
+  border-radius: 10px;
+  border: none;
+  padding: 20px 10px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  & table{
+    border-collapse:initial;
+    border-bottom: rgb(0, 127, 255,0.1);
+    & thead {
+        // vertical-align:baseline;
+         & tr th {
+          color: rgb(0, 127, 255);
+          font-size: 15px;
+        }
+      }
+  }
+
+ 
+}

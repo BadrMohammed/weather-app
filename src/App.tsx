@@ -1,25 +1,27 @@
 import './assets/sass/mainStyle.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-loading-skeleton/dist/skeleton.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { ThemeProvider } from '@mui/material/styles';
 import { Provider } from 'react-redux';
-import theme from './config/theme.config';
 import LayoutController from './routing/Layout/LayoutController';
 import ErrorBoundary from './modules/ErrorBoundary';
 import { store } from './redux/store';
 import { changeLanguage, getLanguage } from './lang/local';
+import { SkeletonTheme } from 'react-loading-skeleton';
+
 function App() {
   return (
-    <Provider store={store}>
-      <ErrorBoundary>
-      <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          <Switch>
-            <Route render={(rest) => <LayoutController {...rest} />} />
-          </Switch>
-        </BrowserRouter>
-      </ThemeProvider>
-      </ErrorBoundary>
-    </Provider>
+    <ErrorBoundary>
+      <SkeletonTheme width='100%' height='100%' borderRadius='inherit' baseColor='#fff'>
+        <Provider store={store}>
+          <BrowserRouter>
+            <Switch>
+              <Route render={(rest) => <LayoutController {...rest} />} />
+            </Switch>
+          </BrowserRouter>
+        </Provider>
+      </SkeletonTheme>
+    </ErrorBoundary>
   );
 }
 changeLanguage();

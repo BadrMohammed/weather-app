@@ -31,16 +31,16 @@ export const changeLanguage = () => {
     if (lang === 'en') {
       local.setLanguage('en');
 
-      document.title = 'Link';
+      document.title = 'Mentor';
     } else {
       local.setLanguage('ar');
 
-      document.title = 'Link';
+      document.title = 'Mentor';
     }
   } else {
     local.setLanguage('en');
     localStorage.setItem('MENTOR_LANG', 'en');
-    document.title = 'Link';
+    document.title = 'Mentor';
   }
 };
 
