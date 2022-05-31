@@ -1,0 +1,70 @@
+@import '../../assets/sass/Variables';
+.home-section {
+  & .home-header {
+    border: 1px solid $lightcolor;
+    padding: 6px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: none;
+    box-shadow: 0 3px 6px 0 rgb(0 127 255/10%);
+
+    & .title {
+      color: $mainColor;
+    }
+
+    & .search-wrapper {
+      min-width: 25%;
+      height: 38px;
+
+      & .icon {
+        color: $mainColor;
+        font-size: 30px;
+        font-weight: bold;
+        margin-inline: 10px;
+      }
+    }
+  }
+}
+
+.dropdown_header {
+  margin-inline: 15px;
+
+  & .button-toggle {
+    background-color: transparent;
+    border: transparent;
+    color: #212832;
+    direction: ltr;
+  }
+}
+
+.dropdown_header .dropdown-menu.show {
+  margin-top: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.dropdown_header hr {
+  background-color: #bcbcbc;
+  width: 100%;
+}
+
+.dropdown_header .button-toggle:active {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  outline: navajowhite;
+}
+.dropdown_header .button-toggle:focus {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  outline: navajowhite;
+}
+
+.dropdown_header ul li span {
+  color: #444444;
+}

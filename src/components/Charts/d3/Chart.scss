@@ -1,0 +1,21 @@
+.line-chart-d3-container {
+    font-size: 16px;
+    color: #666;
+    padding: 25px;
+
+    & text {
+      font-size: 20px;
+    }
+  }
+  
+  svg {
+    overflow: visible;
+  }
+  
+
+
+  
+  .axis .domain,
+  .axis.xAxis line {
+    display: none;
+  }

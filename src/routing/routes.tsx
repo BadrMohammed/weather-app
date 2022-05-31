@@ -1,5 +1,4 @@
 // Imported pages
-import AltRouteIcon from '@mui/icons-material/AltRoute';
 import PageNotFound from '../modules/PageNotFound';
 import { HomeController } from '../modules/Home/HomeController';
 
@@ -9,7 +8,7 @@ const routes = [
     component: HomeController,
     textKey: '',
     url: '/',
-    Icon: <AltRouteIcon />,
+    // Icon: <AltRouteIcon />,
     children: [
       { path: '', component: HomeController, name: 'View Home' },
       { path: '*', component: PageNotFound, name: '404' },

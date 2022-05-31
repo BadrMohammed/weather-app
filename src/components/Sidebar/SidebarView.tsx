@@ -4,7 +4,6 @@ import {
 } from 'react-pro-sidebar';
 
 function SidebarView({
-  collapsed,
   toggled,
   handleToggleSidebar,
   active,
@@ -14,9 +13,9 @@ function SidebarView({
   return (
     <ProSidebar
       rtl={false}
-      collapsed={collapsed}
+      collapsed={false}
       toggled={toggled}
-      breakPoint="md"
+      breakPoint="xxl"
       onToggle={handleToggleSidebar}
     >
       <SidebarContent>

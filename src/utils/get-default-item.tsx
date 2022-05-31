@@ -1,9 +1,8 @@
 export const getDefaultItem = (id: any, arr: any, key: any) => {
   if (arr) {
-    let entry = arr.find((e: any) => e.id === +id);
-
+    let entry = arr.find((e: any) => e.id === id || e.label === id);
     if (entry) {
-      return entry[key];
+      return key ? entry[key] : entry;
     }
   }
   return '';
