@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useAppDispatch } from '../../redux/hooks';
-import { homeSlice } from '../../redux/store';
 import { fetchCountry } from './homeService';
 import { StatisticsController } from './Statistics/StatisticsController';
 import { TableListController } from './TableList/TableListController';
